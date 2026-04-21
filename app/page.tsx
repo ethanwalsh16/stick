@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Home",
+  description: "Track and manage your golf swing focus areas.",
 };
 
 export default function Home() {

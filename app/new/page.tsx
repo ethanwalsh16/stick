@@ -44,19 +44,19 @@ export default function NewPage() {
 
   return (
     <section className="max-w-2xl space-y-8">
-      <div className="space-y-4">
-        <p className="text-sm font-medium uppercase tracking-[0.2em] text-zinc-500 dark:text-zinc-400">
+	  <div className="max-w-2xl space-y-4">
+        <p className="text-sm font-medium uppercase tracking-[0.2em] text-zinc-500">
           New
         </p>
-        <h1 className="text-3xl font-semibold tracking-tight sm:text-4xl">
-          What are you working on?
+        <h1 className="text-4xl font-semibold tracking-tight sm:text-5xl">
+          Add a focus area
         </h1>
-        <p className="text-base leading-7 text-zinc-600 dark:text-zinc-300">
-          Define a specific thing you want to improve. Keep it focused — one swing thought, one area of your game.
+        <p className="text-base leading-7 text-zinc-600">
+          Define something specific you want to improve, for example "Improve my 3-putt avoidance rate by practicing lag putting."
         </p>
       </div>
 
-      <div className="rounded-2xl border border-dashed border-zinc-300 p-6 dark:border-zinc-700 space-y-4">
+      <div className="rounded-2xl border border-zinc-300 p-6  space-y-4">
         <div className="space-y-2">
           <label className="text-sm font-medium">Title</label>
           <input
@@ -64,7 +64,7 @@ export default function NewPage() {
             placeholder="e.g. Keep trail elbow tucked on downswing"
             value={title}
             onChange={(e) => setTitle(e.target.value)}
-            className="w-full rounded-lg border border-zinc-300 px-4 py-2 text-sm dark:border-zinc-700 dark:bg-zinc-900"
+            className="w-full rounded-lg border border-zinc-300 px-4 py-2 text-sm "
           />
         </div>
 
@@ -75,7 +75,7 @@ export default function NewPage() {
             value={description}
             onChange={(e) => setDescription(e.target.value)}
             rows={4}
-            className="w-full rounded-lg border border-zinc-300 px-4 py-2 text-sm dark:border-zinc-700 dark:bg-zinc-900"
+            className="w-full rounded-lg border border-zinc-300 px-4 py-2 text-sm"
           />
         </div>
 
@@ -84,7 +84,7 @@ export default function NewPage() {
         <button
           onClick={handleCreate}
           disabled={loading || !title}
-          className="rounded-lg bg-zinc-900 px-4 py-2 text-sm font-medium text-white disabled:opacity-50 dark:bg-white dark:text-zinc-900"
+          className="rounded-lg bg-zinc-900 px-4 py-2 text-sm font-medium text-white disabled:opacity-50"
         >
           {loading ? 'Creating...' : 'Create focus area'}
         </button>

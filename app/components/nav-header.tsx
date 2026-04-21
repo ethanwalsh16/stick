@@ -19,20 +19,20 @@ export function NavHeader() {
   }
 
   return (
-    <header className="flex flex-col gap-4 border-b border-zinc-200 py-6 dark:border-zinc-800 sm:flex-row sm:items-center sm:justify-between">
-      <Link href="/" className="text-lg font-semibold tracking-tight">
+    <header className="flex flex-col gap-4 border-b border-zinc-700 py-6 sm:flex-row sm:items-center sm:justify-between">
+      <Link href="/home" className="italic text-2xl font-medium uppercase tracking-widest text-zinc-900">
         Stick
       </Link>
-      <nav aria-label="Primary" className="flex items-center gap-4 text-sm text-zinc-500 dark:text-zinc-400">
-        <Link href="/new" className="transition-colors hover:text-zinc-950 dark:hover:text-white">
+      <nav aria-label="Primary" className="flex items-center gap-4 text-md text-zinc-600">
+        <Link href="/new" className="transition-colors hover:text-zinc-950 ">
           New
         </Link>
-        <Link href="/account" className="transition-colors hover:text-zinc-950 dark:hover:text-white">
+        <Link href="/account" className="transition-colors hover:text-zinc-950">
           Account
         </Link>
         <button
           onClick={handleSignOut}
-          className="transition-colors hover:text-zinc-950 dark:hover:text-white"
+          className="hover:cursor-pointer transition-colors hover:text-zinc-950"
         >
           Sign out
         </button>
